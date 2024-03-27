@@ -5,12 +5,8 @@ import 'models/cart_item_model.dart';
 import 'package:flutter/material.dart';
 import 'package:shopsie/core/app_export.dart';
 import 'package:shopsie/widgets/custom_button.dart';
-import 'models/cart_item_model.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shopsie/data/models/lineItems/post_line_items_req.dart';
-import 'models/cart_item_model.dart';
-import 'package:shopsie/data/models/lineItems/post_line_items_req.dart';
-import 'models/cart_item_model.dart';
 import 'package:shopsie/data/models/paymentSessions/post_payment_sessions_req.dart';
 import 'package:shopsie/data/models/complete/post_complete_req.dart';
 import 'package:shopsie/data/models/carts/post_carts_req.dart';
@@ -293,9 +289,8 @@ class CartScreen extends GetWidget<CartController> {
     List<CartItemModel> cartItemModelList = [];
     Get.delete<CartItemModel>();
     Get.put(CartItemModel());
-    if (controller.deleteLineItemsResp!.cart!.items! != null &&
-        controller.deleteLineItemsResp!.cart!.items!.isNotEmpty) {
-      for (var element in controller.deleteLineItemsResp!.cart!.items!) {
+    if (controller.deleteLineItemsResp.cart!.items!.isNotEmpty) {
+      for (var element in controller.deleteLineItemsResp.cart!.items!) {
         var cartItemModel = CartItemModel();
         cartItemModel.cartProductTxt.value = element.title!.toString();
         cartItemModel.productImg.value = element.thumbnail!.toString();
@@ -318,9 +313,8 @@ class CartScreen extends GetWidget<CartController> {
     List<CartItemModel> cartItemModelList = [];
     Get.delete<CartController>();
     Get.put(CartController());
-    if (controller.postLineItemsResp!.cart!.items! != null &&
-        controller.postLineItemsResp!.cart!.items!.isNotEmpty) {
-      for (var element in controller.postLineItemsResp!.cart!.items!) {
+    if (controller.postLineItemsResp.cart!.items!.isNotEmpty) {
+      for (var element in controller.postLineItemsResp.cart!.items!) {
         var cartItemModel = CartItemModel();
         cartItemModel.cartProductTxt.value = element.title!.toString();
         cartItemModel.productImg.value = element.thumbnail!.toString();

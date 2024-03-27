@@ -13,11 +13,7 @@ import 'package:shopsie/core/constants/shopsie.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shopsie/domain/firebaseFacebookAuth/firebaseFacebookAuth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:shopsie/data/models/customers/post_customers_req.dart';
-import 'package:shopsie/data/models/carts/post_carts_req.dart';
 import 'package:shopsie/domain/firebaseGoogleAuth/firebaseGoogleAuth.dart';
-import 'package:shopsie/data/models/customers/post_customers_req.dart';
-import 'package:shopsie/data/models/carts/post_carts_req.dart';
 
 // ignore_for_file: must_be_immutable
 class RegisterScreen extends GetWidget<RegisterController> {

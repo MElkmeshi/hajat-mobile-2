@@ -85,9 +85,8 @@ class ProductSearchController extends GetxController {
 
   void _onFetchProductsSuccess() {
     List<ProductSearchItemModel> productSearchItemModelList = [];
-    if (getProductsResp!.products! != null &&
-        getProductsResp!.products!.isNotEmpty) {
-      for (var element in getProductsResp!.products!) {
+    if (getProductsResp.products!.isNotEmpty) {
+      for (var element in getProductsResp.products!) {
         var productSearchItemModel = ProductSearchItemModel();
         productSearchItemModel.productNameTxt.value = element.title!.toString();
         productSearchItemModel.imageImg.value = element.thumbnail!.toString();

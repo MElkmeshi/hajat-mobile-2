@@ -8,10 +8,8 @@ import 'package:shopsie/core/utils/validation_functions.dart';
 import 'package:shopsie/widgets/custom_button.dart';
 import 'package:shopsie/widgets/custom_text_form_field.dart';
 import 'package:shopsie/core/constants/shopsie.dart';
-import 'models/listhomeaddress_item_model.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shopsie/data/models/addresses/post_addresses_req.dart';
-import 'models/listhomeaddress_item_model.dart';
 
 // ignore_for_file: must_be_immutable
 class ProfileAddressDetailsPage extends StatelessWidget {
@@ -163,11 +161,10 @@ class ProfileAddressDetailsPage extends StatelessWidget {
     List<ListhomeaddressItemModel> listhomeaddressItemModelList = [];
     Get.delete<ListhomeaddressItemModel>();
     Get.put(ListhomeaddressItemModel());
-    if (controller.deleteAddressIdResp!.customer!.shippingAddresses! != null &&
-        controller
-            .deleteAddressIdResp!.customer!.shippingAddresses!.isNotEmpty) {
+    if (controller
+            .deleteAddressIdResp.customer!.shippingAddresses!.isNotEmpty) {
       for (var element
-          in controller.deleteAddressIdResp!.customer!.shippingAddresses!) {
+          in controller.deleteAddressIdResp.customer!.shippingAddresses!) {
         var listhomeaddressItemModel = ListhomeaddressItemModel();
         listhomeaddressItemModel.addAddressOneTxt.value =
             element.address1!.toString();
@@ -213,10 +210,9 @@ class ProfileAddressDetailsPage extends StatelessWidget {
 
   void _onCreateAddressesSuccess() {
     List<ListhomeaddressItemModel> listhomeaddressItemModelList = [];
-    if (controller.postAddressesResp!.customer!.shippingAddresses! != null &&
-        controller.postAddressesResp!.customer!.shippingAddresses!.isNotEmpty) {
+    if (controller.postAddressesResp.customer!.shippingAddresses!.isNotEmpty) {
       for (var element
-          in controller.postAddressesResp!.customer!.shippingAddresses!) {
+          in controller.postAddressesResp.customer!.shippingAddresses!) {
         var listhomeaddressItemModel = ListhomeaddressItemModel();
         listhomeaddressItemModel.addAddressOneTxt.value =
             element.address1!.toString();

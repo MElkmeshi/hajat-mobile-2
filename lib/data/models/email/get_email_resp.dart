@@ -9,9 +9,7 @@ class GetEmailResp {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = {};
-    if (this.exists != null) {
-      data['exists'] = this.exists;
-    }
-    return data;
+    data['exists'] = this.exists;
+      return data;
   }
 }

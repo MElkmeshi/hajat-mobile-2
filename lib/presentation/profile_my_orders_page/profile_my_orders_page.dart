@@ -51,7 +51,7 @@ class ProfileMyOrdersPage extends StatelessWidget {
                         controller
                             .profileMyOrdersModelObj
                             .value
-                            .listorderproductimaItemList[index]!.productId
+                            .listorderproductimaItemList[index].productId
                       });
                         }
                     );

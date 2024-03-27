@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:shopsie/data/models/lineItems/delete_line_items_resp.dart';
 import 'package:shopsie/data/apiClient/api_client.dart';
 import 'package:shopsie/data/models/lineItems/post_line_items_resp.dart';
-import 'package:shopsie/data/models/lineItems/post_line_items_resp.dart';
 import 'package:shopsie/data/models/cartId/get_cart_id_resp.dart';
 import '../models/cart_item_model.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -149,9 +148,8 @@ class CartController extends GetxController {
 
   void _onFetchCartIdSuccess() {
     List<CartItemModel> cartItemModelList = [];
-    if (getCartIdResp!.cart!.items! != null &&
-        getCartIdResp!.cart!.items!.isNotEmpty) {
-      for (var element in getCartIdResp!.cart!.items!) {
+    if (getCartIdResp.cart!.items!.isNotEmpty) {
+      for (var element in getCartIdResp.cart!.items!) {
         var cartItemModel = CartItemModel();
         cartItemModel.cartProductTxt.value = element.title!.toString();
         cartItemModel.productImg.value = element.thumbnail!.toString();

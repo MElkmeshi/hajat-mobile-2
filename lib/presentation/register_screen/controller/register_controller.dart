@@ -9,10 +9,6 @@ import 'package:flutter/material.dart';
 import 'package:shopsie/data/models/customers/post_customers_resp.dart';
 import 'package:shopsie/data/apiClient/api_client.dart';
 import 'package:shopsie/data/models/carts/post_carts_resp.dart';
-import 'package:shopsie/data/models/customers/post_customers_resp.dart';
-import 'package:shopsie/data/models/carts/post_carts_resp.dart';
-import 'package:shopsie/data/models/customers/post_customers_resp.dart';
-import 'package:shopsie/data/models/carts/post_carts_resp.dart';
 
 class RegisterController extends GetxController {
   TextEditingController firstNameController = TextEditingController();
@@ -178,7 +174,7 @@ class RegisterController extends GetxController {
   void onCreateStoreAuthSuccess(var response) {
     try {
       postStoreAuthResp = PostStoreAuthResp.fromJson(response);
-    } catch (e, s) {}
+    } catch (e) {}
   }
 
   void onCreateStoreAuthError(var err) {

@@ -59,8 +59,7 @@ class ProductDiscoverController extends GetxController {
 
   void _onFetchProductsSuccess() {
     List<GridproductnameItemModel> gridproductnameItemModelList = [];
-    if (getProductsResp.products! != null &&
-        getProductsResp.products!.isNotEmpty) {
+    if (getProductsResp.products!.isNotEmpty) {
       for (var element in getProductsResp.products!) {
         var gridproductnameItemModel = GridproductnameItemModel();
         gridproductnameItemModel.productNameTxt.value =

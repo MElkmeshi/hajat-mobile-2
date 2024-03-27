@@ -79,9 +79,9 @@ class ProductPageController extends GetxController {
     productPageModelObj.value.priceTxt.value = "\$ " +
         (getIdResp.product!.variants != null
             ? (getIdResp.product!.variants![0].prices != null
-                ? getIdResp.product!.variants![0]?.prices![0].amount.toString()
+                ? getIdResp.product!.variants![0].prices![0].amount.toString()
                 : "2000")
-            : "0")!;
+            : "0");
   }
 
   void _onFetchIdError() {

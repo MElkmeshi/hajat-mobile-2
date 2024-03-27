@@ -12,9 +12,7 @@ import 'package:shopsie/data/models/storeAuth/post_store_auth_req.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shopsie/domain/firebaseFacebookAuth/firebaseFacebookAuth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:shopsie/data/models/storeAuth/post_store_auth_req.dart';
 import 'package:shopsie/domain/firebaseGoogleAuth/firebaseGoogleAuth.dart';
-import 'package:shopsie/data/models/storeAuth/post_store_auth_req.dart';
 
 // ignore_for_file: must_be_immutable
 class LoginScreen extends GetWidget<LoginController> {

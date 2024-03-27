@@ -2,12 +2,6 @@ import 'package:shopsie/core/app_export.dart';
 import 'package:shopsie/data/apiClient/api_client.dart';
 import 'package:firebase_core/firebase_core.dart';
 import '../../firebase_options.dart';
-import 'package:firebase_core/firebase_core.dart';
-import '../../firebase_options.dart';
-import 'package:firebase_core/firebase_core.dart';
-import '../../firebase_options.dart';
-import 'package:firebase_core/firebase_core.dart';
-import '../../firebase_options.dart';
 
 class InitialBindings extends Bindings {
   @override

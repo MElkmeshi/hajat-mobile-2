@@ -19,7 +19,7 @@ class MainLandingScreen extends GetWidget<MainLandingController> {
         child: Scaffold(
             key: _scaffoldKey,
             backgroundColor: ColorConstant.whiteA700,
-            drawer: MenuDraweritem(MenuController(),),
+            drawer: MenuDraweritem(MenuControllerMe(),),
             body: Container(
                 margin: getMargin(),
                 child: Column(

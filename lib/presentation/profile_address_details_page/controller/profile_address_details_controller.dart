@@ -115,9 +115,8 @@ class ProfileAddressDetailsController extends GetxController {
 
   void _onFetchAuthSuccess() {
     List<ListhomeaddressItemModel> listhomeaddressItemModelList = [];
-    if (getAuthResp!.customer!.shippingAddresses! != null &&
-        getAuthResp!.customer!.shippingAddresses!.isNotEmpty) {
-      for (var element in getAuthResp!.customer!.shippingAddresses!) {
+    if (getAuthResp.customer!.shippingAddresses!.isNotEmpty) {
+      for (var element in getAuthResp.customer!.shippingAddresses!) {
         var listhomeaddressItemModel = ListhomeaddressItemModel();
         listhomeaddressItemModel.addAddressOneTxt.value =
             element.address1!.toString();

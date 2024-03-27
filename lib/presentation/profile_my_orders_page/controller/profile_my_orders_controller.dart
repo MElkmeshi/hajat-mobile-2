@@ -62,20 +62,19 @@ class ProfileMyOrdersController extends GetxController {
 
   void _onFetchAuthSuccess() {
     List<ListorderproductimaItemModel> ordersItemModelList = [];
-    if (getAuthResp!.customer!.orders! != null &&
-        getAuthResp!.customer!.orders!.isNotEmpty) {
-      for (var element in getAuthResp!.customer!.orders!) {
+    if (getAuthResp.customer!.orders!.isNotEmpty) {
+      for (var element in getAuthResp.customer!.orders!) {
         if (element.items != null && element.items!.isNotEmpty) {
-          for (var item in element!.items!) {
+          for (var item in element.items!) {
             var ordersItemModel = new ListorderproductimaItemModel();
-            ordersItemModel.orderProductnamTxt.value = item!.title!.toString();
-            ordersItemModel.orderQtyTxt.value = item!.quantity!.toString();
+            ordersItemModel.orderProductnamTxt.value = item.title!.toString();
+            ordersItemModel.orderQtyTxt.value = item.quantity!.toString();
             ordersItemModel.orderProductImaImg.value =
-                item!.thumbnail!.toString();
+                item.thumbnail!.toString();
             ordersItemModel.priceTxt.value =
-                "\$ " + item!.unitPrice!.toString();
+                "\$ " + item.unitPrice!.toString();
             ordersItemModel.productId.value =
-                item!.variant!.productId!.toString();
+                item.variant!.productId!.toString();
             ordersItemModelList.add(ordersItemModel);
           }
         }

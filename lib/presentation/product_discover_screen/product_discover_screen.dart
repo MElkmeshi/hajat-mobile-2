@@ -146,7 +146,7 @@ class ProductDiscoverScreen extends GetWidget<ProductDiscoverController> {
                                         NavigationArgs.productId: controller
                                             .productDiscoverModelObj
                                             .value
-                                            .gridproductnameItemList[index]!
+                                            .gridproductnameItemList[index]
                                             .idTxt
                                       });
                                 }

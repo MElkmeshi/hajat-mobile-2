@@ -2,17 +2,19 @@ name: shopsie
 description: A new Flutter project.
 version: 1.0.0+1
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 dependencies:
   flutter:
     sdk: flutter
   get: ^4.6.5
+  flutter_web_plugins:
+    sdk: flutter
   cupertino_icons: ^1.0.5
   connectivity_plus: ^2.3.6
   shared_preferences: ^2.0.15
   cached_network_image: ^3.2.1
   flutter_svg: ^0.22.0
-#  flutter_login_facebook: ^1.1.0
+  #  flutter_login_facebook: ^1.1.0
   http: ^0.13.3
   google_sign_in: ^5.2.1
   smooth_page_indicator: ^1.0.0+2
@@ -22,6 +24,13 @@ dependencies:
   flutter_facebook_auth: ^4.4.1
   url_launcher: 6.0.20
 
+  connectivity_plus_web: any
+  firebase_auth_web: any
+  firebase_core_web: any
+  flutter_facebook_auth_web: any
+  google_sign_in_web: any
+  shared_preferences_web: any
+  url_launcher_web: any
 dev_dependencies:
   flutter_test:
     sdk: flutter

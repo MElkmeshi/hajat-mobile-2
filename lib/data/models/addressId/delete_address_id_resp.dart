@@ -21,14 +21,14 @@ class Customer {
   String? id;
   String? createdAt;
   String? updatedAt;
-  Null? deletedAt;
+  Null deletedAt;
   String? email;
   String? firstName;
   String? lastName;
   String? billingAddressId;
-  Null? phone;
+  Null phone;
   bool? hasAccount;
-  Null? metadata;
+  Null metadata;
   List<ShippingAddresses>? shippingAddresses;
   BillingAddress? billingAddress;
 
@@ -120,19 +120,19 @@ class ShippingAddresses {
   String? id;
   String? createdAt;
   String? updatedAt;
-  Null? deletedAt;
+  Null deletedAt;
   String? customerId;
-  Null? company;
+  Null company;
   String? firstName;
   String? lastName;
   String? address1;
   String? address2;
   String? city;
   String? countryCode;
-  Null? province;
+  Null province;
   String? postalCode;
-  Null? phone;
-  Null? metadata;
+  Null phone;
+  Null metadata;
 
   ShippingAddresses(
       {this.id,
@@ -229,19 +229,19 @@ class BillingAddress {
   String? id;
   String? createdAt;
   String? updatedAt;
-  Null? deletedAt;
-  Null? customerId;
-  Null? company;
+  Null deletedAt;
+  Null customerId;
+  Null company;
   String? firstName;
   String? lastName;
   String? address1;
   String? address2;
   String? city;
   String? countryCode;
-  Null? province;
+  Null province;
   String? postalCode;
-  Null? phone;
-  Null? metadata;
+  Null phone;
+  Null metadata;
 
   BillingAddress(
       {this.id,

@@ -2,7 +2,6 @@ import 'controller/product_page_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:shopsie/core/app_export.dart';
 import 'package:shopsie/widgets/custom_button.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:shopsie/data/models/cartIdLineItems/post_cart_id_line_items_req.dart';
 import 'package:shopsie/core/constants/shopsie.dart';
 import 'package:fluttertoast/fluttertoast.dart';

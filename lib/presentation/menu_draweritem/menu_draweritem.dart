@@ -6,7 +6,7 @@ import 'package:shopsie/core/app_export.dart';
 class MenuDraweritem extends StatelessWidget {
   MenuDraweritem(this.controller);
 
-  MenuController controller;
+  MenuControllerMe controller;
 
   @override
   Widget build(BuildContext context) {
@@ -123,7 +123,6 @@ class MenuDraweritem extends StatelessWidget {
                                                                     .copyWith(
                                                                         letterSpacing:
                                                                             1.08)))),
-
                                                   ]))),
                                       Align(
                                           alignment: Alignment.centerRight,
@@ -141,21 +140,21 @@ class MenuDraweritem extends StatelessWidget {
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   children: [
-                                                  InkWell(
-                                                      onTap: () {
-                                                   onTapImgInsta();
-                                                   },
-                                              child:    Padding(
-                                                        padding: getPadding(
-                                                            bottom: 1),
-                                                        child: CommonImageView(
-                                                            svgPath:
-                                                                ImageConstant
-                                                                    .imgEye,
-                                                            height:
-                                                                getSize(26.00),
-                                                            width: getSize(
-                                                                26.00)))),
+                                                    InkWell(
+                                                        onTap: () {
+                                                          onTapImgInsta();
+                                                        },
+                                                        child: Padding(
+                                                            padding: getPadding(
+                                                                bottom: 1),
+                                                            child: CommonImageView(
+                                                                svgPath:
+                                                                    ImageConstant
+                                                                        .imgEye,
+                                                                height: getSize(
+                                                                    26.00),
+                                                                width: getSize(
+                                                                    26.00)))),
                                                     InkWell(
                                                         onTap: () {
                                                           onTapImgFacebook();
@@ -172,37 +171,38 @@ class MenuDraweritem extends StatelessWidget {
                                                                     26.00),
                                                                 width: getSize(
                                                                     26.00)))),
-                                          InkWell(
-                                              onTap: () {
-                                                onTapImgPrintrest();
-                                              },
-                                                child:Padding(
-                                                        padding: getPadding(
-                                                            left: 24, top: 1),
-                                                        child: CommonImageView(
-                                                            svgPath:
-                                                                ImageConstant
-                                                                    .imgSettings,
-                                                            height:
-                                                                getSize(26.00),
-                                                            width: getSize(
-                                                                26.00)))),
-                                          InkWell(
-                                              onTap: () {
-                                                onTapImgTwitter();
-                                              },
-                                                 child:Padding(
-                                                        padding: getPadding(
-                                                            left: 24,
-                                                            bottom: 1),
-                                                        child: CommonImageView(
-                                                            svgPath:
-                                                                ImageConstant
-                                                                    .imgVector,
-                                                            height:
-                                                                getSize(26.00),
-                                                            width:
-                                                                getSize(26.00))))
+                                                    InkWell(
+                                                        onTap: () {
+                                                          onTapImgPrintrest();
+                                                        },
+                                                        child: Padding(
+                                                            padding: getPadding(
+                                                                left: 24,
+                                                                top: 1),
+                                                            child: CommonImageView(
+                                                                svgPath:
+                                                                    ImageConstant
+                                                                        .imgSettings,
+                                                                height: getSize(
+                                                                    26.00),
+                                                                width: getSize(
+                                                                    26.00)))),
+                                                    InkWell(
+                                                        onTap: () {
+                                                          onTapImgTwitter();
+                                                        },
+                                                        child: Padding(
+                                                            padding: getPadding(
+                                                                left: 24,
+                                                                bottom: 1),
+                                                            child: CommonImageView(
+                                                                svgPath:
+                                                                    ImageConstant
+                                                                        .imgVector,
+                                                                height: getSize(
+                                                                    26.00),
+                                                                width: getSize(
+                                                                    26.00))))
                                                   ])))
                                     ])))
                       ])))
@@ -248,5 +248,4 @@ class MenuDraweritem extends StatelessWidget {
       throw 'Could not launch https://www.facebook.com/login/';
     }
   }
-
 }

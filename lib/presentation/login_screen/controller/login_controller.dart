@@ -7,10 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:shopsie/data/models/storeAuth/post_store_auth_resp.dart';
 import 'package:shopsie/data/apiClient/api_client.dart';
 import 'package:shopsie/data/models/customerId/get_customer_id_resp.dart';
-import 'package:shopsie/data/models/storeAuth/post_store_auth_resp.dart';
-import 'package:shopsie/data/models/customerId/get_customer_id_resp.dart';
-import 'package:shopsie/data/models/storeAuth/post_store_auth_resp.dart';
-import 'package:shopsie/data/models/customerId/get_customer_id_resp.dart';
 import 'package:shopsie/data/models/email/get_email_resp.dart';
 
 class LoginController extends GetxController {
@@ -67,7 +63,7 @@ class LoginController extends GetxController {
   void onCreateStoreAuthSuccess(var response) {
     try {
       postStoreAuthResp = PostStoreAuthResp.fromJson(response);
-    } catch (e, s) {}
+    } catch (e) {}
   }
 
   void onCreateStoreAuthError(var err) {

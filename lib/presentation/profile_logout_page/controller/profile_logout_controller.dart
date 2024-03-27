@@ -1,4 +1,3 @@
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '/core/app_export.dart';
 import 'package:shopsie/presentation/profile_logout_page/models/profile_logout_model.dart';
