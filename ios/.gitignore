@@ -25,7 +25,6 @@ Flutter/flutter_export_environment.sh
 ServiceDefinitions.json
 Runner/GeneratedPluginRegistrant.*
 Info.plist
-firebase_app_id_file.json
 
 
 # Exceptions to above rules.

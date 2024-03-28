@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "203992379027",
+    "firebase_url": "https://first-fluuter-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "first-fluuter-app",
+    "storage_bucket": "first-fluuter-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203992379027:android:966f358991280ed0f7a766",
+        "android_client_info": {
+          "package_name": "com.example.shopsie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203992379027-khci7nvt1hgq64cad7r3mnof31v0qbkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5AQsA_LSqQZG-6QUd8MSgsHXsgf-MvXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203992379027-khci7nvt1hgq64cad7r3mnof31v0qbkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203992379027:android:0b3be41bcaf5ee31f7a766",
+        "android_client_info": {
+          "package_name": "com.shopsie.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203992379027-khci7nvt1hgq64cad7r3mnof31v0qbkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5AQsA_LSqQZG-6QUd8MSgsHXsgf-MvXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "203992379027-khci7nvt1hgq64cad7r3mnof31v0qbkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
