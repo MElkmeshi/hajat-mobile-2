@@ -10,27 +10,26 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   cupertino_icons: ^1.0.5
-  connectivity_plus: ^2.3.6
+  connectivity_plus: ^6.0.1
   shared_preferences: ^2.0.15
-  cached_network_image: ^3.2.1
-  flutter_svg: ^0.22.0
+  cached_network_image: ^3.3.1
+  flutter_svg: ^2.0.10+1
   #  flutter_login_facebook: ^1.1.0
-  http: ^0.13.3
-  google_sign_in: ^5.2.1
+  http: ^1.2.1
+  google_sign_in: ^6.2.1
   smooth_page_indicator: ^1.0.0+2
   fluttertoast: ^8.0.8
-  firebase_auth: ^3.3.4
-  firebase_core: ^1.10.6
-  flutter_facebook_auth: ^4.4.1
-  url_launcher: 6.0.20
-
-  connectivity_plus_web: any
+  firebase_auth: ^4.18.0
+  firebase_core: ^2.27.2
+  flutter_facebook_auth: ^6.1.1
+  url_launcher: ^6.2.5
+  firebase_core_platform_interface: ^5.0.0
   firebase_auth_web: any
   firebase_core_web: any
   flutter_facebook_auth_web: any
   google_sign_in_web: any
   shared_preferences_web: any
-  url_launcher_web: any
+  url_launcher_web:
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -7,14 +7,13 @@ import 'core/app_export.dart';
 
 var customerId;
 
-
-Future<void> main() async{
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
   SharedPreferences prefs = await SharedPreferences.getInstance();
-  customerId  = prefs.getString('customer_id');
+  customerId = prefs.getString('customer_id');
   Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
   runApp(MyApp());
 }
@@ -28,9 +27,11 @@ class MyApp extends StatelessWidget {
       translations: AppLocalization(),
       locale: Get.deviceLocale, //for setting localization strings
       fallbackLocale: Locale('en', 'US'),
-      title: 'shopsie',
+      title: 'Shopsie',
       initialBinding: InitialBindings(),
-      initialRoute: customerId!=null? AppRoutes.mainLandingScreen : AppRoutes.initialRoute,
+      initialRoute: customerId != null
+          ? AppRoutes.mainLandingScreen
+          : AppRoutes.initialRoute,
       getPages: AppRoutes.pages,
     );
   }
